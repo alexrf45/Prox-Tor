@@ -25,6 +25,6 @@ Instructions:
     > curl --socks5 127.0.0.1:9050 https://check.torproject.org/api/ip
     {"IsTor":true,"IP":"185.220.XXX.XXX"}
 
-5. You can also run the container with your own custom torrc
+5. You can also run the container with your own custom torrc:
 
-docker run --rm --detach --name tor --volume $PWD/torrc:/etc/tor/torrc --publish 9050:9050 fonalex45/project-repo-1:prox-tor
+   docker run --rm --detach --name tor --volume $PWD/torrc:/etc/tor/torrc --publish 9050:9050 fonalex45/project-repo-1:prox-tor
